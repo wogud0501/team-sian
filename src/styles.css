@@ -1,4 +1,4 @@
-/* Google Fonts 적용 */
+/* 기본 폰트 */
 body {
     margin: 0;
     font-family: 'Jua', sans-serif; /* 한글 폰트 */
@@ -20,12 +20,12 @@ body {
 }
 
 .logo-img {
-    height: 60px; /* 로고 크기 조정 */
+    height: 80px; /* 로고 크기 조정 */
 }
 
 .server-name {
     font-family: 'Alex Brush', cursive; /* 영어 필기체 */
-    font-size: 28px;
+    font-size: 30px;
     color: white;
     margin-left: 10px;
 }
@@ -60,31 +60,4 @@ body {
     padding: 10px;
     background-color: #6c8cf5;
     color: white;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .nav-links {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-        gap: 5px;
-    }
-
-    .nav-links a {
-        margin-left: 0;
-        padding-left: 10px;
-        width: 100%;
-        text-align: left;
-        box-sizing: border-box;
-        color:white
-    }
 }

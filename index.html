@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Sian</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-    <!-- CSS 파일 연결 -->
-    <link rel="stylesheet" href="./src/style.css">
+    <!-- 기본 폰트 설정 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+    </style>
+    <!-- 기본 스타일 로드 -->
+    <link id="stylesheet" rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
-<!-- 상단 네비게이션 바 -->
+<!-- 네비게이션 바 -->
 <header class="navbar">
     <div class="logo">
         <img src="./logo/sian-logo.jpg" alt="Team Sian 로고" class="logo-img">
@@ -34,5 +36,8 @@
 <footer class="footer">
     <p>&copy; 2025 Team Sian. All rights reserved.</p>
 </footer>
+
+<!-- JavaScript로 장치 감지 -->
+<script src="device-detect.js"></script>
 </body>
 </html>
