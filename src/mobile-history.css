@@ -43,10 +43,12 @@ body {
 /* 메인 콘텐츠 */
 .main-content {
     text-align: center;
+    color: black;
 }
 
 .main-content h1 {
     font-size: 28px; /* 폰트 크기 축소 */
+    color: black;
 }
 
 /* 연혁 섹션 */
