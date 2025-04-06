@@ -1,0 +1,63 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c8cf5; /* 학원풍 파란색 */
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px; /* 로고 크기 조정 */
+}
+
+.server-name {
+    font-family: 'Cursive', sans-serif; /* 필기체 */
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* 링크 강조 효과 */
+}
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+}
+
+.main-content p {
+    font-size: 18px;
+}
+
+/* 푸터 스타일 */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6c8cf5;
+    color: white;
+}
