@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Sian</title>
-    <!-- Favicon 설정 -->
-    <link rel="icon" href="./logo/sian_logo.ico" type=image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
     </style>
-    <link id="stylesheet" rel="stylesheet" href="./src/styles.css">
+    <!-- Favicon 설정 -->
+    <link rel="icon" href="./logo/sian_logo.ico" type="image/x-icon">
+    <!-- 기본 스타일 -->
+    <link id="stylesheet" rel="stylesheet" href="./src/history.css">
 </head>
 <body>
 <!-- 네비게이션 바 -->
@@ -20,7 +21,8 @@
         <span class="server-name">team-sian</span>
     </div>
     <nav class="nav-links">
-        <a href="#history">팀 연혁</a>
+        <a href="#main">메인</a>
+        <a href="history.html">팀 연혁</a> <!-- 팀 연혁 링크 추가 -->
         <a href="#about">팀 소개</a>
         <a href="#apply">팀 지원</a>
     </nav>
@@ -29,7 +31,7 @@
 <!-- 메인 콘텐츠 -->
 <main class="main-content">
     <h1>환영합니다! Team Sian 웹사이트에 오신 것을 환영합니다.</h1>
-    <p>이곳은 더빙팀 Team Sian의 공식 웹사이트입니다. 상단 메뉴를 통해 원하는 정보를 확인하세요!</p>
+    <p>이곳은 팀 시안의 공식 웹사이트입니다. 상단 메뉴를 통해 원하는 정보를 확인하세요!</p>
 </main>
 
 <!-- 푸터 -->
@@ -45,10 +47,11 @@
 
     // 모바일이면 mobile.css, 아니면 styles.css 적용
     if (isMobile) {
-        stylesheet.href = './src/mobile.css';
+        stylesheet.href = 'mobile.css';
     } else {
-        stylesheet.href = './src/styles.css';
+        stylesheet.href = 'styles.css';
     }
 </script>
 </body>
+</html>
 </html>

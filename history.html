@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Sian - 팀 연혁</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+  </style>
+  <!-- Favicon 설정 -->
+  <link rel="icon" href="./logo/sian_logo.ico" type="image/x-icon">
+  <!-- 기본 스타일 -->
+  <link id="stylesheet" rel="stylesheet" href="./src/history.css">
+</head>
+<body>
+<!-- 네비게이션 바 -->
+<header class="navbar">
+  <div class="logo">
+    <img src="./logo/sian_logo.png" alt="Team Sian 로고" class="logo-img">
+    <span class="server-name">team-sian</span>
+  </div>
+  <nav class="nav-links">
+    <a href="./index.html">메인</a> <!-- 메인 페이지로 돌아가기 -->
+    <a href="history.html">팀 연혁</a>
+    <a href="#about">팀 소개</a>
+    <a href="#apply">팀 지원</a>
+  </nav>
+</header>
+
+<!-- 메인 콘텐츠 -->
+<main class="main-content">
+  <h1>팀 연혁</h1>
+  <section class="timeline">
+    <!-- 팀 연혁 항목들 -->
+    <div class="event" data-scroll-animation>
+      <h2>2020년</h2>
+      <p>팀 시안 설립</p>
+    </div>
+    <div class="event" data-scroll-animation>
+      <h2>2021년</h2>
+      <p>첫 프로젝트 성공적으로 완료</p>
+    </div>
+    <div class="event" data-scroll-animation>
+      <h2>2022년</h2>
+      <p>국제 대회에서 수상</p>
+    </div>
+    <div class="event" data-scroll-animation>
+      <h2>2023년</h2>
+      <p>새로운 팀원 합류 및 확장</p>
+    </div>
+  </section>
+</main>
+
+<!-- 푸터 -->
+<footer class="footer">
+  <p>&copy; 2025 Team Sian. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript로 스크롤 애니메이션 구현 -->
+<script>
+  const isMobile = /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+  const stylesheet = document.getElementById('stylesheet');
+
+  // 모바일이면 mobile.css, 아니면 styles.css 적용
+  if (isMobile) {
+    stylesheet.href = 'mobile-history.css';
+  } else {
+    stylesheet.href = 'history.css';
+  }
+  // 스크롤 애니메이션 함수
+  const scrollElements = document.querySelectorAll("[data-scroll-animation]");
+
+  const elementInView = (el, offset = 100) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+            elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+  };
+
+  const hideScrollElement = (element) => {
+    element.classList.remove("scrolled");
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 150)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el);
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScrollAnimation);
+</script>
+</body>
+</html>
