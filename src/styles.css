@@ -21,6 +21,7 @@ body {
 
 .logo-img {
     height: 60px; /* 로고 크기 */
+    background-color: transparent; /* 배경색 투명 */
 }
 
 .server-name {
