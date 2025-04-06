@@ -40,6 +40,7 @@ body {
 
 .main-content {
     text-align: center;
+    color: black;
 }
 
 .main-content h1 {
@@ -49,6 +50,7 @@ body {
 /* 연혁 섹션 */
 .timeline {
     margin-top: 30px;
+    color: black;
 }
 
 .event {
