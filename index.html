@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Sian</title>
-    <!-- 기본 폰트 설정 -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-    </style>
-    <!-- 기본 스타일 로드 -->
+    <!-- 기본 스타일 -->
     <link id="stylesheet" rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
@@ -38,6 +33,17 @@
 </footer>
 
 <!-- JavaScript로 장치 감지 -->
-<script src="device-detect.js"></script>
+<script>
+    // 장치 감지 및 CSS 파일 로드
+    const isMobile = /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+    const stylesheet = document.getElementById('stylesheet');
+
+    // 모바일이면 mobile.css, 아니면 styles.css 적용
+    if (isMobile) {
+        stylesheet.href = './src/mobile.css';
+    } else {
+        stylesheet.href = './src/styles.css';
+    }
+</script>
 </body>
 </html>
