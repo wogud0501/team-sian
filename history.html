@@ -64,9 +64,9 @@
 
   // 모바일이면 mobile.css, 아니면 styles.css 적용
   if (isMobile) {
-    stylesheet.href = 'mobile-history.css';
+    stylesheet.href = './src/mobile-history.css';
   } else {
-    stylesheet.href = 'history.css';
+    stylesheet.href = './src/history.css';
   }
   // 스크롤 애니메이션 함수
   const scrollElements = document.querySelectorAll("[data-scroll-animation]");
