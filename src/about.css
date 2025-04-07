@@ -1,0 +1,17 @@
+/* 데스크톱 스타일 */
+body {
+    margin: 0;
+    font-family: 'Jua', sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c8cf5;
+    padding: 10px 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}

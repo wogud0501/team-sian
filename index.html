@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Sian</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-    </style>
+    <title>Team Sian - 팀 소개</title>
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
     <!-- Favicon 설정 -->
     <link rel="icon" href="./logo/sian_logo.ico" type="image/x-icon">
     <!-- 기본 스타일 -->
-    <link id="stylesheet" rel="stylesheet" href="./src/styles.css">
+    <link id="stylesheet" rel="stylesheet" href="./src/about.css">
 </head>
 <body>
 <!-- 네비게이션 바 -->
@@ -21,16 +20,20 @@
         <span class="server-name">team-sian</span>
     </div>
     <nav class="nav-links">
-        <a href="history.html">팀 연혁</a> <!-- 팀 연혁 링크 추가 -->
-        <a href="#about">팀 소개</a>
-        <a href="#apply">팀 지원</a>
+        <a href="index.html">메인</a>
+        <a href="history.html">팀 연혁</a>
+        <a href="about.html">팀 소개</a>
+        <a href="apply.html">팀 지원</a>
     </nav>
 </header>
 
 <!-- 메인 콘텐츠 -->
 <main class="main-content">
-    <h1>환영합니다! 더빙팀 Team Sian 웹사이트에 오신 것을 환영합니다.</h1>
-    <p>이곳은 틱톡과 유튜브에서 활동하는 팀 시안의 공식 웹사이트입니다. 상단 메뉴를 통해 원하는 정보를 확인하세요!</p>
+    <h1>팀 소개</h1>
+    <section class="about-section">
+        <p>팀 시안은 창의성과 협력을 바탕으로 다양한 프로젝트를 성공적으로 수행해온 팀입니다.</p>
+        <p>우리의 목표는 혁신적인 아이디어를 통해 세상을 변화시키는 것입니다.</p>
+    </section>
 </main>
 
 <!-- 푸터 -->
@@ -40,15 +43,14 @@
 
 <!-- JavaScript로 장치 감지 -->
 <script>
-    // 장치 감지 및 CSS 파일 로드
     const isMobile = /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
     const stylesheet = document.getElementById('stylesheet');
 
-    // 모바일이면 mobile.css, 아니면 styles.css 적용
+    // 모바일이면 mobile-about.css, 아니면 about.css 적용
     if (isMobile) {
-        stylesheet.href = './src/mobile.css';
+        stylesheet.href = './src/mobile-about.css';
     } else {
-        stylesheet.href = './src/styles.css';
+        stylesheet.href = './src/about.css';
     }
 </script>
 </body>
