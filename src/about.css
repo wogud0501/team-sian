@@ -15,3 +15,13 @@ body {
     display: flex;
     align-items: center;
 }
+
+.logo img {
+    height: 60px;
+}
+
+.server-name {
+    font-family: 'Alex', cursive;
+    font-size: 20px;
+    color: white;
+}
